@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Red Hat Display;
+  text-transform: capitalize;
+}
+
+body {
+  background-color: #c5dff8;
+}
+
+.main {
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 20px 0 rgba(188, 160, 160, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  background-color: #071952;
+  padding: 15px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.main .image img {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+  border-radius: 15px;
+}
+.main .text {
+  color: #35a29f;
+}
+.main .text h2 {
+  text-align: center;
+  padding: 30px 0 10px 0;
+}
+.main .text p {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.main .price {
+  padding: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 15px;
+  color: #071952;
+  background-color: #35a29f;
+  margin-bottom: 20px;
+}
+.main .price a {
+  text-decoration: none;
+  color: #071952;
+}
+.main .price a:hover {
+  color: #f8f9fe;
+}
+.main .price .icon {
+  position: relative;
+}
+.main .price .icon i {
+  background-color: #071952;
+  color: #35a29f;
+  padding: 14px 20px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 24px;
+}
+.main .buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.main .buttons .link1 button {
+  padding: 10px 10px;
+  width: 280px;
+  border-radius: 15px;
+  background-color: #35a29f;
+  color: #071952;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+.main .buttons .link1 button:hover {
+  background-color: #35a29f;
+}
+.main .buttons .link2 {
+  cursor: pointer;
+}
+.main .buttons .link2 button {
+  padding: 10px 10px;
+  background-color: #071952;
+  color: #f8f9fe;
+  border: none;
+  cursor: pointer;
+}
+
+/* Your existing CSS code */
+/* Media query for mobile devices */
+@media screen and (max-width: 400px) {
+  .main {
+    width: 100%;
+    padding: 10px;
+    border-radius: 0;
+  }
+  .image {
+    width: auto;
+    height: 100%;
+  }
+  .text h2 {
+    padding: 20px 0 10px 0;
+  }
+  .buttons .link1 button,
+  .buttons .link2 button {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
